@@ -1,0 +1,8 @@
+strict-transport-security: MISSING
+content-security-policy: MISSING
+x-frame-options: MISSING
+x-content-type-options: MISSING
+referrer-policy: MISSING
+permissions-policy: MISSING
+x-powered-by: MISSING
+server: Server: Apache-Coyote/1.1

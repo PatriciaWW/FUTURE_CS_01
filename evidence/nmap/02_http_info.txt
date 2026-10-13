@@ -1,0 +1,43 @@
+# Nmap 7.991 scan initiated Tue Oct 13 02:20:56 2026 as: /usr/lib/nmap/nmap --privileged -Pn -p 80,443,8080 --script http-headers,http-title,http-server-header -oN evidence/nmap/02_http_info.txt demo.testfire.net
+Nmap scan report for demo.testfire.net (65.61.137.117)
+Host is up (0.26s latency).
+
+PORT     STATE SERVICE
+80/tcp   open  http
+| http-headers: 
+|   Server: Apache-Coyote/1.1
+|   Set-Cookie: JSESSIONID=8A05508B33C478D1AE5692FC7797D9BE; Path=/; HttpOnly
+|   Content-Type: text/html;charset=ISO-8859-1
+|   Transfer-Encoding: chunked
+|   Date: Tue, 13 Oct 2026 06:21:00 GMT
+|   Connection: close
+|   
+|_  (Request type: HEAD)
+|_http-title: Altoro Mutual
+|_http-server-header: Apache-Coyote/1.1
+443/tcp  open  https
+| http-headers: 
+|   Server: Apache-Coyote/1.1
+|   Set-Cookie: JSESSIONID=8F4B43CC48AB22BD0438D443A8E7C61A; Path=/; Secure; HttpOnly
+|   Content-Type: text/html;charset=ISO-8859-1
+|   Transfer-Encoding: chunked
+|   Date: Tue, 13 Oct 2026 06:21:00 GMT
+|   Connection: close
+|   
+|_  (Request type: HEAD)
+|_http-title: Altoro Mutual
+|_http-server-header: Apache-Coyote/1.1
+8080/tcp open  http-proxy
+|_http-server-header: Apache-Coyote/1.1
+|_http-title: Altoro Mutual
+| http-headers: 
+|   Server: Apache-Coyote/1.1
+|   Set-Cookie: JSESSIONID=F204484342F12AEEE5ED6A6E4361BDEC; Path=/; HttpOnly
+|   Content-Type: text/html;charset=ISO-8859-1
+|   Transfer-Encoding: chunked
+|   Date: Tue, 13 Oct 2026 06:21:00 GMT
+|   Connection: close
+|   
+|_  (Request type: HEAD)
+
+# Nmap done at Tue Oct 13 02:21:00 2026 -- 1 IP address (1 host up) scanned in 3.74 seconds

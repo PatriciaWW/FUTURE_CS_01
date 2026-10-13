@@ -1,0 +1,20 @@
+# Terminal logs (may contain personal info)
+*.log
+notes/terminal_session*
+
+# ZAP session files
+*.session
+*.session.*
+
+# Secrets and credentials
+.env
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Editor and system files
+*.swp
+*~
+.DS_Store
+Thumbs.db

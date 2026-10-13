@@ -1,0 +1,2 @@
+2026-10-12: Original target testphp.vulnweb.com (44.228.249.3) unreachable: all ports filtered, curl and Firefox no response. Controls passed: ping 8.8.8.8, DNS, HTTPS to example.com. Target changed to demo.testfire.net.
+2026-10-12 Scan 1 (nmap -sV top 100) demo.testfire.net 65.61.137.117: open 80, 443, 8080 (Apache Tomcat/Coyote JSP engine 1.1); 97 ports filtered; no FTP/SSH/database ports visible. To confirm: does 8080 serve the same site, does 80 redirect to 443, real Tomcat version.
